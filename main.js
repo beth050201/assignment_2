@@ -35,6 +35,6 @@ let string = "Hi I'm Bethany";
 let intro = string.split("");
 let el = document.getElementById('intro');
 (function animate() {
-intro.length > 0 ? el.innerHTML += intro.shift() : clearTimeout(running); 
+intro.length > 0 ? el.innerHTML += intro.shift() : clearTimeout(); 
  let running = setTimeout(animate, 90);
 })();
