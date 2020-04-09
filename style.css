@@ -101,6 +101,18 @@ img {
   align-content: center;
  }
 
+/* for typing aniamtion using Javascript*/
+ #intro {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(73, 144, 202);
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    /*https://codepen.io/lizcoultersmith/pen/VwYwyKJ for border under writing*/
+    border-bottom: 1px solid rgb(73, 144, 202);
+  font-size: 35px;
+}
+
  /* .profile{
   border-style: none;
   border-radius: 15%;
