@@ -10,6 +10,9 @@ const navSlide= ()=> {
     
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
+
+          /*burger animation*/
+    burger.classList.toggle('toggle');
     });
 
   /* adding animation to the links in the navigation*/
@@ -22,6 +25,7 @@ const navSlide= ()=> {
         /*shows the delay for each link*/
         console.log(index / 7);
     });
+
 }
 
 /* function used*/
@@ -35,6 +39,6 @@ let string = "Hi I'm Bethany";
 let intro = string.split("");
 let el = document.getElementById('intro');
 (function animate() {
-intro.length > 0 ? el.innerHTML += intro.shift() : clearTimeout(); 
+intro.length > 0 ? el.innerHTML += intro.shift() : clearTimeout(running); 
  let running = setTimeout(animate, 90);
 })();

@@ -50,6 +50,8 @@
   transition: all 0.3 ease;
   }
 
+
+
   h2{
     /* font family used from google webfonts */
     font-family: 'Montserrat', sans-serif;
@@ -334,10 +336,6 @@ img {
     /* lighter grey for the hover */
   }
   
-  .twitter{
-    width: 32px;
-    height: 32px;
-  }
   
   /* footer getting the footer to stick to the bottom of the screen */
   footer{
@@ -363,6 +361,9 @@ img {
     }
   }
 
+  
+
+  /* break points used for the naviagtion*/
   @media screen and (max-width: 1212px){
     .nav-links{
       display: flex;
@@ -381,11 +382,12 @@ img {
 
   
   @media screen and (max-width: 768px){
-    /*removes scroll*/
+    /*removes scroll so can't scroll side ways*/
     body{
       overflow-x: hidden;
     }
-    /*creating burger */
+
+    
     .nav-links {
       position: absolute;
       right: 0px;
@@ -412,23 +414,24 @@ img {
     .nav-active{
       transform: translateX(0%);
     }
+/* burger animation making the cross changing values to get a cross*/
+.toggle .line1{
+  transform: rotate(-45deg) translate(-8px,6px);
+}
 
-    .toggle .line1{
-      transform: rotate(-45deg) translate(-5px,6px);
-    }
+.toggle .line2{
+  opacity: 0;
+}
 
-    .toggle .line2{
-      opacity: 0;
-    }
-
-    .toggle .line3{
-      transform: rotate(45deg) translate(-5px,-6px);
-    }
-
+.toggle .line3{
+  transform: rotate(45deg) translate(-8px,-6px);
+}
     
     /* adjusting columns of grid on every page so appears underneath each other in column 1 */
     .content1{
       grid-template-columns: repeat(1,1fr);
+      padding: 0;
+      margin: 0px;
     }
   
     .one{
@@ -448,8 +451,9 @@ img {
     }
   
     .container{
-      grid-template-columns: repeat(1,fr)
-      
+      grid-template-columns: repeat(1,fr);
+      padding: 10px 200px 20px;
+      margin: 0px;
     }
   
     .portfolio-item{
@@ -460,6 +464,9 @@ img {
 
     .content2{
       grid-template-columns: repeat(1,fr)
+      padding: 0;
+      margin: 0px;
+      
     }
   
     .experience{
