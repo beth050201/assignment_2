@@ -340,23 +340,29 @@ img {
   }
   
   
-  /* footer getting the footer to stick to the bottom of the screen */
-  footer{
-      text-align: left;
-      color: white;
-      position: sticky;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding-left: 25px;
-  }
-
-  .icons{
-    width: 32px;
-    height: 32px;
-  }
+  /* changing the icons on the footers opacity - https://codepen.io/lizcoultersmith/pen/VwYNjdG */
 
 
+  .icons li a {
+    font-size: 75px;
+    text-decoration: none;
+    height: 10px;
+    margin-top: 1rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+  .icons li {
+    display: inline-block;
+    align-items: center;
+    list-style-type: none;
+    opacity: 0.5;
+    padding: 1 rem;
+}
+.icons li:hover {
+    opacity: 2;
+}
 
   /* animation for the navigation*/
   @keyframes navLinkFade{
@@ -395,7 +401,6 @@ img {
     body{
       overflow-x: hidden;
     }
-
     
     .nav-links {
       position: absolute;

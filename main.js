@@ -31,15 +31,6 @@ const navSlide= ()=> {
 /* function used*/
 navSlide();
 
-
-const nav = document.querySelector('nav-links')
-const topOfNav = nav.offsetTop;
-function fixNav() {
-console.log(topOfNav);
-}
-
-window.addEventListener('scroll', fixNav);
-
 /* typing animation for the introduction on index page - https://codepen.io/LaithHaleem/pen/wzyrBd 
 began with lots of 'var' so changed to 'let' to have  a more updated JavaScript form*/
 
