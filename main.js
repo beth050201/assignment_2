@@ -6,7 +6,7 @@ const navSlide= ()=> {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks=document.querySelectorAll('.nav-links li');
- //Toggle Navigation
+ /*Toggle Navigation when burger is clicked*/
     
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
@@ -32,8 +32,16 @@ const navSlide= ()=> {
 navSlide();
 
 
+const nav = document.querySelector('nav-links')
+const topOfNav = nav.offsetTop;
+function fixNav() {
+console.log(topOfNav);
+}
+
+window.addEventListener('scroll', fixNav);
+
 /* typing animation for the introduction on index page - https://codepen.io/LaithHaleem/pen/wzyrBd 
-began with lots of 'var' so changed to let to have  a more updated JavaScript form*/
+began with lots of 'var' so changed to 'let' to have  a more updated JavaScript form*/
 
 let string = "Hi I'm Bethany";
 let intro = string.split("");

@@ -204,16 +204,19 @@ img {
   filter: grayscale(1);
 }
 
+/* transform code https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
 .portfolio-item:hover .middle {
   opacity: 1;
+  transform: scale(1.2); 
 }
 
 /* styling the hover text on the images */
 .text {
   color: white;
-  font-size: 2.5em;
+  font-size: 1.5em;
   padding: 16px 32px;
   font-family: 'Raleway', sans-serif;
+  
 }
 
 /* grid for CV page, same style as grid for index page just different postionings and stlying */
@@ -348,6 +351,12 @@ img {
       padding-left: 25px;
   }
 
+  .icons{
+    width: 32px;
+    height: 32px;
+  }
+
+
 
   /* animation for the navigation*/
   @keyframes navLinkFade{
@@ -418,7 +427,7 @@ img {
 .toggle .line1{
   transform: rotate(-45deg) translate(-8px,6px);
 }
-
+/* middle line cannot be seen*/
 .toggle .line2{
   opacity: 0;
 }
@@ -463,12 +472,15 @@ img {
     }
 
     .content2{
-      grid-template-columns: repeat(1,fr)
-      padding: 0;
+      grid-template-columns: repeat(1,fr);
+      padding: 50px;
       margin: 0px;
-      
     }
   
+    .education{
+      grid-column: 1;
+      grid-row: 5;
+    }
     .experience{
       grid-column: 1;
       grid-row: 3;
