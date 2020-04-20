@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0; /* removing padding */
     box-sizing:border-box;
     
   }
@@ -18,26 +18,29 @@
 
   .title{
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 2px; /*adding letter spacing to improve */
     font-size: 40px;
   }
 
+  /* css found by watching video it was then amended to suit my website - https://www.youtube.com/watch?v=gXkqy0b4M5g */
   .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 30%; 
   }
 
   .nav-links li{
-    list-style: none;
+    list-style: none; /* removing bullet points*/
   }
+
   .nav-links a{
     color: white;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 3px; 
     font-size: 20px;
   }
 
+  /* don't display burger in desktop view*/
   .burger{
     display: none;
   }
@@ -47,7 +50,7 @@
   height: 5px;
   background-color: white;
   margin: 5px;
-  transition: all 0.3 ease;
+  transition: all 0.3 ease; 
   }
 
 
@@ -356,7 +359,7 @@ a:hover {
     opacity: 2;
 }
 
-  /* animation for the navigation*/
+  /* animation for the navigation - opacity 0 to 1 to make the nav links visbale again */
   @keyframes navLinkFade{
     from{
           opacity: 0;
@@ -367,10 +370,9 @@ a:hover {
       transform: translateX(0px);
     }
   }
+ 
 
-  
-
-  /* break points used for the naviagtion*/
+  /* break point used for the naviagtion*/
   @media screen and (max-width: 1212px){
     .nav-links{
       display: flex;
@@ -379,6 +381,7 @@ a:hover {
     }
   } 
 
+   /* break point used for the naviagtion*/
   @media screen and (max-width: 852px){
     .nav-links{
       display: flex;
@@ -388,29 +391,30 @@ a:hover {
   } 
 
   
-  @media screen and (max-width: 768px){
-    /*removes scroll so can't scroll side ways*/
+  @media screen and (max-width: 700px){
+    
     body{
       overflow-x: hidden;
+      /*removes scroll so can't scroll side ways*/
     }
     
     .nav-links {
       position: absolute;
       right: 0px;
-      height: 92vh;
+      height: 92vh; /* make full screen as 8vh used above in nav*/
       top: 8vh;
       background: linear-gradient(rgb(172, 189, 214), rgb(162, 201, 233));
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 50%;
-      /*moves nav off the screen*/
+      width: 25%; /* nav when is in view covers 25% of the screen*/
+      /*moves nav off the screen in mobile view*/
       transform: translateX(100%);
-      transition: transform 0.5s ease-in;
+      transition: transform 0.5s ease-in; /*transitionor the slide in of navigation*/
     }
 
     .nav-links li{
-      opacity: 0;
+      opacity: 0; /*starting postion so nav-links can't be seen*/
     }
 
     .burger{
@@ -420,18 +424,20 @@ a:hover {
     .nav-active{
       transform: translateX(0%);
     }
-/* burger animation making the cross changing values to get a cross*/
-.toggle .line1{
-  transform: rotate(-45deg) translate(-8px,6px);
-}
-/* middle line cannot be seen*/
-.toggle .line2{
-  opacity: 0;
-}
 
-.toggle .line3{
-  transform: rotate(45deg) translate(-8px,-6px);
-}
+  /* burger animation making the cross - changing values so lines rotate*/
+    .toggle .line_1{
+  transform: rotate(-45deg) translate(-8px,6px);
+    }
+  
+    .toggle .line_2{
+    opacity: 0;
+  /* middle line cannot be seen*/
+    }
+
+    .toggle .line_3{
+    transform: rotate(45deg) translate(-8px,-6px);
+  }
     
     /* adjusting columns of grid on every page so appears underneath each other in column 1 */
     .content1{
