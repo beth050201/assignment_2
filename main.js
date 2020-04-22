@@ -45,3 +45,12 @@ let el = document.getElementById('intro'); // gets the id called intro
 intro.length > 0 ? el.innerHTML += intro.shift() : clearTimeout();  //carries out animate function
 setTimeout(animate, 100);
 })();
+
+
+function changePic() {
+  document.getElementById("profile").src = "assets/G3QpQGblRnmAJTMrNUSVBg.jpg";
+}
+
+function normalPic() {
+  document.getElementById("profile") .src = "assets/IMG_4857.jpg";
+}
