@@ -420,6 +420,7 @@ a:hover {
 
     .burger{
       display: block;
+      z-index: 9999;
     }
 
     .nav-active{
