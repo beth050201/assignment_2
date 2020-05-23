@@ -48,9 +48,9 @@ setTimeout(animate, 100);
 
 
 function changePic() {
-  document.getElementById("profile").src = "assets/G3QpQGblRnmAJTMrNUSVBg.jpg";
+  document.getElementById("profile") .src = "assets/IMG_4857.jpg";
 }
 
 function normalPic() {
-  document.getElementById("profile") .src = "assets/IMG_4857.jpg";
+  document.getElementById("profile").src = "assets/G3QpQGblRnmAJTMrNUSVBg.jpg";
 }
