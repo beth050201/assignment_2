@@ -390,6 +390,14 @@ a:hover {
     }
   } 
 
+   /* break point used for the naviagtion*/
+   @media screen and (max-width: 700px){
+    .nav-links{
+      display: flex;
+      justify-content: space-around;
+      width: 70%;
+    }
+  } 
   
   @media screen and (max-width: 360px){
     
