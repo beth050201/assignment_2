@@ -20,16 +20,25 @@ Portfolio validation fixed:
 
 CV validation:
 
-![Index validation](/assets/cv_validation_1.png)
+![CV validation](/assets/cv_validation_1.png)
 
 CV validation fixed:
 
-![Index validation](/assets/cv_validation_2.png)
+![CV validation](/assets/cv_validation_2.png)
 
 Contact validation:
 
-![Index validation](/assets/contact_validation_1.png)
+![Contact validation](/assets/contact_validation_1.png)
 
 Contact validation fixed:
 
-![Index validation](/assets/contact_validation_2.png)
+![Contact validation](/assets/contact_validation_2.png)
+
+
+Github version control:
+
+![Repositories](/assets/repositories.png)
+
+Github contributions over the year:
+
+![Contributions](/assets/contributions.png)
