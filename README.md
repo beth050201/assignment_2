@@ -41,4 +41,4 @@ Github version control:
 
 Github contributions over the year:
 
-![Contributions](/assets/github-contributions.png)
+![Contributions](/assets/github_contributions.png)
